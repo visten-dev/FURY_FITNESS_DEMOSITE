@@ -60,7 +60,7 @@ export const GYM_DETAILS = {
     "https://www.google.com/maps/dir/?api=1&destination=Fury+Fitness+Vengavasal+Chennai",
   googleMapsEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7561845607736!2d80.16527!3d12.92336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e6834b7f329%3A0x8677bf1516e88102!2sFury%20Fitness!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-  logoUrl: "/assets/aistudio/logo_8267c561.jpg",
+  logoUrl: "./images/logo.jpg",
 };
 
 export const OPERATING_HOURS: OperatingHours[] = [
@@ -80,7 +80,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Heavy-Duty Bio-Mechanical Stations",
     description:
       "Engineered plate-loaded and selectorized machines designed for optimal resistance curves, safe joint alignment, and maximum muscle recruitment.",
-    image: "/assets/aistudio/interior_6307e5de.jpg",
+    image: "./images/gym_interior.jpg",
     isAuthentic: true,
     highlights: ["Custom red & black heavy-duty frames", "Full cable pulley crossovers", "Multi-station resistance towers"],
   },
@@ -90,7 +90,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Dedicated Power & Hypertrophy Zone",
     description:
       "Extensive Olympic barbells, calibrated cast-iron plates, robust power racks, and precision dumbbells built for serious lifters.",
-    image: "/assets/aistudio/traing_7fd3f9e1.webp",
+    image: "./images/strength_training.webp",
     isAuthentic: true,
     highlights: ["Olympic free weights & benches", "Plate-loaded seated press stations", "Heavy dumbbell racks"],
   },
@@ -100,7 +100,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Endurance & Cardiovascular Conditioning",
     description:
       "High-spec commercial treadmills, rowers, and elliptical trainers configured for fat-loss intervals, stamina, and cardiovascular longevity.",
-    image: "/src/assets/images/cardio_equipment_zone_1793456498871.jpg",
+    image: "./images/cardio_equipment.jpg",
     isAuthentic: false,
     highlights: ["Interactive telemetry displays", "Paced interval training programs", "Ergometer rowers & treadmills"],
   },
@@ -110,7 +110,7 @@ export const FACILITIES: Facility[] = [
     tagline: "1-on-1 Certified Coaching & Discipline",
     description:
       "Direct guidance on lifting mechanics, progressive overload, structured nutrition, and accountability tailored specifically to your body.",
-    image: "/assets/aistudio/gyme_a2d033ce.jpg",
+    image: "./images/athletes_flexing.jpg",
     isAuthentic: true,
     highlights: ["Customized periodized training plans", "Body composition tracking", "Competition & strength coaching"],
   },
@@ -120,7 +120,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Therapeutic Muscle Recovery & Detox",
     description:
       "Premium Finnish-style thermal heat sauna designed to accelerate metabolic recovery, soothe muscle tension, and lower cortisol post-workout.",
-    image: "/src/assets/images/sauna_facility_1793456498026.jpg",
+    image: "./images/sauna_facility.jpg",
     isAuthentic: false,
     highlights: ["Thermal recovery chamber", "Natural cedar wood interior", "Accelerated circulation & joint relief"],
   },
@@ -130,7 +130,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Pristine Post-Workout Refreshment",
     description:
       "Hygienic, private shower and changing facilities allowing seamless transitions between early morning workouts and your daily schedule.",
-    image: "/src/assets/images/sauna_facility_1793456498026.jpg",
+    image: "./images/sauna_facility.jpg",
     isAuthentic: false,
     highlights: ["Private shower suites", "High-pressure hot/cold water", "Locker storage & grooming counters"],
   },
@@ -140,7 +140,7 @@ export const FACILITIES: Facility[] = [
     tagline: "Guided Remote Fitness Support",
     description:
       "Digital coaching sessions, mobility routines, and structured home workout guidance when travelling or training remotely.",
-    image: "/src/assets/images/athletic_conditioning_1793456498361.jpg",
+    image: "./images/athletic_conditioning.jpg",
     isAuthentic: false,
     highlights: ["Virtual form feedback", "Remote conditioning routines", "Trainer consultation via mobile"],
   },
@@ -155,7 +155,7 @@ export const PROGRAMS: Program[] = [
       "Build raw power, dense lean muscle mass, and indestructible joint integrity through progressive compound lifting.",
     fullDesc:
       "Our strength program utilizes progressive overload across compound lifts—squats, deadlifts, presses, and rows—paired with bio-mechanically matched plate-loaded machines. Suitable for novices building baseline strength to competitive lifters.",
-    image: "/assets/aistudio/traing_7fd3f9e1.webp",
+    image: "./images/strength_training.webp",
     isAuthentic: true,
     keyBenefits: ["Compound lift mastery", "Bone density & joint reinforcement", "Targeted progressive overload"],
   },
@@ -167,7 +167,7 @@ export const PROGRAMS: Program[] = [
       "Scientifically structured metabolic conditioning combined with sustainable caloric discipline for lasting fat loss.",
     fullDesc:
       "Target stubborn fat while preserving lean muscle. We merge high-energy functional circuits, monitored heart-rate intervals, and straightforward nutritional advice that fits a realistic Indian lifestyle.",
-    image: "/src/assets/images/athletic_conditioning_1793456498361.jpg",
+    image: "./images/athletic_conditioning.jpg",
     isAuthentic: false,
     keyBenefits: ["Elevated resting metabolic rate", "High-energy circuit conditioning", "Sustainable nutrition blueprint"],
   },
@@ -179,7 +179,7 @@ export const PROGRAMS: Program[] = [
       "Work directly with elite trainers who keep you accountable, eliminate guesswork, and fast-track your physical transformation.",
     fullDesc:
       "Personalized training at Fury Fitness means customized programming, strict movement correction to prevent injury, and constant progression check-ins. Your trainer walks every rep with you.",
-    image: "/assets/aistudio/gyme_a2d033ce.jpg",
+    image: "./images/athletes_flexing.jpg",
     isAuthentic: true,
     keyBenefits: ["Injury prevention & biomechanics", "Weekly progress assessments", "Direct coach accountability"],
   },
@@ -191,7 +191,7 @@ export const PROGRAMS: Program[] = [
       "Enhance cardiovascular output, agility, work capacity, and mental resilience for peak daily physical performance.",
     fullDesc:
       "Combining battle ropes, sleds, plyometric drills, and tempo cardio to build an engine that doesn't quit. Feel energized, agile, and ready for whatever physical challenge comes your way.",
-    image: "/src/assets/images/cardio_equipment_zone_1793456498871.jpg",
+    image: "./images/cardio_equipment.jpg",
     isAuthentic: false,
     keyBenefits: ["Increased lung capacity & VO2", "Athletic agility & coordination", "Functional multi-plane movement"],
   },
@@ -203,7 +203,7 @@ export const PROGRAMS: Program[] = [
       "Build daily vitality, mobility, postural correction, and overall health in a welcoming, highly motivating gym culture.",
     fullDesc:
       "Designed for working professionals, students, and fitness enthusiasts wanting consistent healthy habits, reduced stress, and functional stamina for life.",
-    image: "/assets/aistudio/interior_6307e5de.jpg",
+    image: "./images/gym_interior.jpg",
     isAuthentic: true,
     keyBenefits: ["Posture & spinal mobility", "Stress reduction & mental clarity", "Consistent, sustainable habit"],
   },
@@ -239,7 +239,7 @@ export const GALLERY_ITEMS = [
     title: "State Level Championship Podium",
     category: "championship",
     categoryLabel: "Championship & Culture",
-    image: "/assets/aistudio/achievmnet_ba180390.jpg",
+    image: "./images/championship_podium.jpg",
     isAuthentic: true,
     desc: "Athletes proudly representing on the championship podium with medals and official state honors.",
   },
@@ -248,7 +248,7 @@ export const GALLERY_ITEMS = [
     title: "Main Strength & Turf Training Hall",
     category: "facility",
     categoryLabel: "Facility & Gear",
-    image: "/assets/aistudio/interior_6307e5de.jpg",
+    image: "./images/gym_interior.jpg",
     isAuthentic: true,
     desc: "Vengavasal centre equipped with heavy-duty red & black machine stations and training turf.",
   },
@@ -257,7 +257,7 @@ export const GALLERY_ITEMS = [
     title: "Targeted Resistance & Plate-Loaded Work",
     category: "training",
     categoryLabel: "Training Action",
-    image: "/assets/aistudio/traing_7fd3f9e1.webp",
+    image: "./images/strength_training.webp",
     isAuthentic: true,
     desc: "Hard work on precision biomechanical plate-loaded seated stations.",
   },
@@ -266,7 +266,7 @@ export const GALLERY_ITEMS = [
     title: "Discipline, Brotherhood & Motivation",
     category: "championship",
     categoryLabel: "Championship & Culture",
-    image: "/assets/aistudio/gyme_a2d033ce.jpg",
+    image: "./images/athletes_flexing.jpg",
     isAuthentic: true,
     desc: "The culture of strength: authentic coaching, brotherhood, and collective progress.",
   },
@@ -275,7 +275,7 @@ export const GALLERY_ITEMS = [
     title: "Commercial Cardio & Endurance Line",
     category: "facility",
     categoryLabel: "Facility & Gear",
-    image: "/src/assets/images/cardio_equipment_zone_1793456498871.jpg",
+    image: "./images/cardio_equipment.jpg",
     isAuthentic: false,
     desc: "Paced interval running, rowing, and endurance conditioning stations.",
   },
@@ -284,7 +284,7 @@ export const GALLERY_ITEMS = [
     title: "Thermal Sauna & Recovery Suite",
     category: "facility",
     categoryLabel: "Facility & Gear",
-    image: "/src/assets/images/sauna_facility_1793456498026.jpg",
+    image: "./images/sauna_facility.jpg",
     isAuthentic: false,
     desc: "Finnish cedar wood sauna for deep muscular recovery and metabolic revitalization.",
   },
@@ -293,7 +293,7 @@ export const GALLERY_ITEMS = [
     title: "High-Intensity Conditioning",
     category: "training",
     categoryLabel: "Training Action",
-    image: "/src/assets/images/athletic_conditioning_1793456498361.jpg",
+    image: "./images/athletic_conditioning.jpg",
     isAuthentic: false,
     desc: "Explosive metabolic battle ropes and functional athletic capacity building.",
   },

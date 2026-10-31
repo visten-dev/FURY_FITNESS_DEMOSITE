@@ -32,9 +32,15 @@ export const BrandIntroSection: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col justify-between space-y-6">
             <div className="relative group overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 aspect-[4/3]">
               <img
-                src="/assets/aistudio/gyme_a2d033ce.jpg"
+                src="./images/athletes_flexing.jpg"
                 alt="Fury Fitness Athletes & Coaches"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('gyme_a2d033ce')) {
+                    target.src = './images/gyme_a2d033ce.jpg';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
@@ -51,9 +57,15 @@ export const BrandIntroSection: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="relative group overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900 aspect-[4/5] sm:aspect-auto sm:h-52">
                 <img
-                  src="/assets/aistudio/achievmnet_ba180390.jpg"
+                  src="./images/championship_podium.jpg"
                   alt="State Championship Winners at Fury Fitness"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.includes('achievmnet_ba180390')) {
+                      target.src = './images/achievmnet_ba180390.jpg';
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3">

@@ -109,6 +109,12 @@ export const ProgramsSection: React.FC<ProgramsSectionProps> = ({ onOpenEnquiry 
                 src={activeProgram.image}
                 alt={activeProgram.title}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('strength_training')) {
+                    target.src = './images/strength_training.webp';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-transparent" />
 

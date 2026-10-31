@@ -12,9 +12,15 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenEnquiry }) => {
       {/* Background imagery with dramatic cinematic scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/aistudio/interior_6307e5de.jpg"
+          src="./images/gym_interior.jpg"
           alt="Fury Fitness Training Hall"
           className="w-full h-full object-cover opacity-20 filter contrast-125 brightness-75 scale-105"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.includes('interior_6307e5de')) {
+              target.src = './images/interior_6307e5de.jpg';
+            }
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/85 to-[#080808]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#E5B842]/10 rounded-full blur-[180px] pointer-events-none" />

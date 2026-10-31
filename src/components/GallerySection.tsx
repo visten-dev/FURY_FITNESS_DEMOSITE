@@ -88,8 +88,16 @@ export const GallerySection: React.FC = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className={`w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${
+                    item.id === 'g1' ? 'object-[center_20%]' : 'object-center'
+                  }`}
                   loading="lazy"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.includes('gym_interior')) {
+                      target.src = './images/gym_interior.jpg';
+                    }
+                  }}
                 />
 
                 {/* Gradient Scrim */}
@@ -169,6 +177,12 @@ export const GallerySection: React.FC = () => {
                 src={filteredItems[lightboxIndex].image}
                 alt={filteredItems[lightboxIndex].title}
                 className="max-h-[75vh] w-auto object-contain mx-auto"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('gym_interior')) {
+                    target.src = './images/gym_interior.jpg';
+                  }
+                }}
               />
             </div>
 

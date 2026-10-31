@@ -461,9 +461,15 @@ export const ThreeHeroDumbbell: React.FC<ThreeHeroDumbbellProps> = ({ className 
       {hasWebGlError && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0d0d0d] p-6 text-center z-10">
           <img
-            src="/assets/aistudio/traing_7fd3f9e1.webp"
+            src="./images/strength_training.webp"
             alt="Fury Fitness Equipment"
             className="w-72 h-72 object-cover rounded-xl border border-[#E5B842]/30 shadow-2xl mb-4"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (!target.src.includes('traing_7fd3f9e1')) {
+                target.src = './images/traing_7fd3f9e1.webp';
+              }
+            }}
           />
           <span className="text-[#E5B842] font-display text-lg tracking-wider uppercase">
             Fury Fitness · Precision Equipment

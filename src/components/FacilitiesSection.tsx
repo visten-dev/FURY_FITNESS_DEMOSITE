@@ -70,6 +70,12 @@ export const FacilitiesSection: React.FC<FacilitiesSectionProps> = ({ onOpenEnqu
                 src={activeFacility.image}
                 alt={activeFacility.name}
                 className="w-full h-full object-cover object-[center_38%] transition-transform duration-700 group-hover:scale-105"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('gym_interior')) {
+                    target.src = './images/gym_interior.jpg';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-black/20 lg:to-black/80" />
 
@@ -166,6 +172,12 @@ export const FacilitiesSection: React.FC<FacilitiesSectionProps> = ({ onOpenEnqu
                     src={facility.image}
                     alt={facility.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.includes('gym_interior')) {
+                        target.src = './images/gym_interior.jpg';
+                      }
+                    }}
                   />
                 </div>
                 <div className="text-xs font-semibold text-white truncate">{facility.name}</div>
