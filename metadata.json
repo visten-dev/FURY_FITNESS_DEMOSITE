@@ -1,0 +1,6 @@
+{
+  "name": "Fury Fitness | Premium Fitness Centre Chennai",
+  "description": "Experience Fury Fitness in Vengavasal, Chennai. Built by discipline, defined by strength. Modern equipment, personal training, strength & conditioning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
